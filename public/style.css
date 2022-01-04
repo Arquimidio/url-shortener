@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-cyan: hsl(180, 66%, 49%);
+    --primary-violet: hsl(257, 27%, 26%);
+    --red: hsl(0, 87%, 67%);
+    --gray: hsl(0, 0%, 75%);
+    --gray-violet: hsl(257, 7%, 63%);
+    --dark-blue: hsl(255, 11%, 22%);
+    --dark-violet: hsl(260, 8%, 14%);
+    --light-grey: hsl(210, 33%, 95%);
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+body > *{
+    padding: 0.9rem;
+    font-family: Poppins;
+}
+
+hr{
+    align-self: stretch;
+    width: 100%;
+    top: 2.9rem;
+    left: 0;
+    position: absolute;
+    border: 0;
+    background-color: var(--gray);
+    height: 1px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 1.2rem 1rem;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 6rem;
+}
+
+main img{
+    width: 100%;
+    height: auto;
+}
+
+h1{
+    font-size: 2.8rem;
+    color: var(--dark-violet);
+    line-height: 3.3rem;
+}
+
+main h5{
+    font-size: 1.3rem;
+    color: var(--gray)
+}
+
+button{
+    background-color: var(--primary-cyan);
+    color: #fff;
+    font-weight: 700;
+    border: 0;
+    cursor: pointer;
+}
+
+.button--copied{
+    background-color: var(--dark-violet);
+    transition: background 0.2s;
+}
+
+.get-started--btn{
+    border-radius: 2rem;
+    padding: 0.8rem 2.3rem;
+    font-size: 1.2rem;
+}
+
+.shortener{
+    position: relative;
+    top: -5rem;
+}
+
+form{
+    background-image: url('./images/bg-shorten-mobile.svg');
+    background-color: var(--dark-blue);
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: 60%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem 2rem;
+    border-radius: 0.8rem;
+}
+
+form input, form input::placeholder{
+    font-family: Poppins;
+    font-size: 1rem;
+}
+
+form input{
+    padding: 0.5rem 1.4rem;
+    border-radius: 0.3rem;
+    border: 0;
+}
+
+form button{
+    padding: 0.6rem 0.8rem;
+    border-radius: 0.3rem;
+    font-size: 1.2rem;
+}
+
+.links--container{
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    box-shadow: 0.2rem 0.2rem 1rem rgba(0, 0, 0, 0.2);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    gap: 0.7rem;
+    align-items: flex-start;
+    margin: 1rem 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.links--container button{
+    align-self: stretch;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 0.2rem;
+}
+
+
+.statistics{
+    background-color: var(--light-grey);
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    margin-top: 5rem;
+    position: relative;
+}
+
+.info--line{
+    position: absolute;
+    width: 0.5rem;
+    height: 20rem;
+    background: var(--primary-cyan);
+    top: 10rem;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.info__card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 0.5rem;
+    padding: 3rem 1.5rem;
+    gap: 1rem;
+    position: relative;
+}
+
+.info__card:last-of-type{
+    margin-bottom: 2rem;
+}
+
+.info__card div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--dark-blue);
+    padding: 1rem;
+    border-radius: 50%;
+    position: absolute;
+    top: -2rem;
+}
+
+.boost{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    justify-content: center;
+    background-image: url('./images/bg-boost-mobile.svg');
+    background-color: var(--dark-violet);
+    background-repeat: no-repeat;
+    background-size: 90%;
+    background-position: center right;
+    padding: 5rem 0;
+    width: 100%;
+    color: white;
+}
+
+.links__area{
+    display: flex;
+    flex-direction: column;
+}
