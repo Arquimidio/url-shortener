@@ -153,14 +153,18 @@ form button{
 
 .statistics{
     background-color: var(--light-grey);
+    width: 100%;
 }
 
 .info{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 20rem;
     gap: 4rem;
-    margin-top: 5rem;
     position: relative;
+    margin: 5rem auto 0 auto;
 }
 
 .info--line{
@@ -207,7 +211,7 @@ form button{
     gap: 1rem;
     justify-content: center;
     background-image: url('./images/bg-boost-mobile.svg');
-    background-color: var(--dark-violet);
+    background-color: var(--primary-violet);
     background-repeat: no-repeat;
     background-size: 90%;
     background-position: center right;
@@ -216,7 +220,26 @@ form button{
     color: white;
 }
 
+footer{
+    background-color: var(--dark-violet);
+    width: 100%;
+    color: #fff;
+    padding: 2rem 0;
+}
+
+.links{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
 .links__area{
     display: flex;
     flex-direction: column;
+}
+
+.links__area a{
+    color: #fff;
+    text-decoration: none;
 }
