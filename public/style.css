@@ -471,5 +471,23 @@ footer a:hover, footer i:hover{
         transform: translateY(3rem);
     }
 
+    footer{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+
+    .links{
+        flex-direction: row;
+        margin:0 4rem 0 0;
+        margin-left: auto;
+        gap: 4rem;
+    }
+
+    .links__area{
+        gap: 1rem;
+    }
+
 }
 
