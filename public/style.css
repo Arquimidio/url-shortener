@@ -31,6 +31,15 @@ body > *{
     font-family: Poppins;
 }
 
+p {
+    color: var(--gray);
+    font-weight: 700;
+}
+
+i{
+    font-size: 1.5rem;
+}
+
 hr{
     align-self: stretch;
     width: 100%;
@@ -48,6 +57,7 @@ nav{
     align-items: center;
     width: 100%;
     padding: 1.2rem 1rem;
+    color: var(--gray);
 }
 
 main{
@@ -63,16 +73,20 @@ main img{
     height: auto;
 }
 
+h1, h2{
+    color: var(--dark-violet);
+}
+
 h1{
     font-size: 2.8rem;
-    color: var(--dark-violet);
     line-height: 3.3rem;
 }
 
-main h5{
+main h2{
     font-size: 1.3rem;
     color: var(--gray)
 }
+
 
 button{
     background-color: var(--primary-cyan);
@@ -156,6 +170,12 @@ form button{
     width: 100%;
 }
 
+.statistics h2{
+    font-size: 1.7rem;
+    color: var(--dark-violet);
+    margin-bottom: 0.5rem;
+}
+
 .info{
     display: flex;
     flex-direction: column;
@@ -170,9 +190,9 @@ form button{
 .info--line{
     position: absolute;
     width: 0.5rem;
-    height: 20rem;
+    height: 30rem;
     background: var(--primary-cyan);
-    top: 10rem;
+    top: 13rem;
     left: 50%;
     transform: translate(-50%);
 }
@@ -204,6 +224,11 @@ form button{
     top: -2rem;
 }
 
+.info__card h3{
+    font-size: 1.4rem;
+    margin-top: 1rem;
+}
+
 .boost{
     display: flex;
     flex-direction: column;
@@ -218,6 +243,11 @@ form button{
     padding: 5rem 0;
     width: 100%;
     color: white;
+}
+
+.boost h3{
+    font-size: 1.6rem;
+    color: #fff;
 }
 
 footer{
@@ -242,4 +272,14 @@ footer{
 .links__area a{
     color: #fff;
     text-decoration: none;
+}
+
+.social{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.social i{
+    font-size: 1.8rem;
 }
