@@ -17,6 +17,10 @@
     --light-grey: hsl(210, 33%, 95%);
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     display: flex;
     justify-content: center;
@@ -57,7 +61,8 @@ nav{
     align-items: center;
     width: 100%;
     padding: 1.2rem 1rem;
-    color: var(--gray);
+    background-color: rgb(252, 252, 252);
+    box-shadow: 2px 2px 5px rgba(0,0,0, 0.1);
     position: fixed;
     top: 0;
     z-index: 1;
@@ -70,18 +75,20 @@ nav{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 0.5rem;
+    gap: 1rem;
     margin: 0 auto;
     top: 5rem;
     left: 50%;
     transform: translate(-50%, 0);
-    width: 20rem;
+    width: 90%;
     background: var(--primary-violet);
     border-radius: 30px;
     padding: 2rem;
     z-index: 1;
     opacity: 0;
     visibility: hidden;
+    color: white;
+    font-weight: 700;
 }
 
 .mobile-menu.visible{
@@ -94,7 +101,7 @@ main{
     flex-direction: column;
     align-items: center;
     gap: 1rem;
-    margin: 3rem 0 6rem 0;
+    margin: 5rem 0 6rem 0;
 }
 
 main img{
