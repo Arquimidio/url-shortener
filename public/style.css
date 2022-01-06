@@ -40,6 +40,10 @@ p {
     font-weight: 700;
 }
 
+a{
+    text-decoration: none;
+}
+
 i{
     cursor: pointer;
     font-size: 1.5rem;
@@ -68,21 +72,22 @@ nav{
     align-items: center;
     width: 100%;
     padding: 1.2rem 1rem;
-    background-color: rgb(252, 252, 252);
-    box-shadow: 2px 2px 5px rgba(0,0,0, 0.1);
-    position: fixed;
+    /*position: fixed;
     top: 0;
-    z-index: 1;
+    z-index: 1;*/
 }
 
 nav i{
     color: var(--gray)
 }
 
-.mobile-menu{
-    position: fixed;
+.menu{
     list-style-type: none;
     display: flex;
+}
+
+.mobile-menu{
+    position: fixed;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -112,12 +117,36 @@ nav i{
     align-self: stretch;
 }
 
+.desktop-menu{
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    display: none;
+    padding: 0 2rem;
+    gap: 1rem;
+}
+
+.desktop-menu a{
+    color: var(--gray)
+}
+
+.desktop-menu a:hover{
+    color: var(--dark-blue)
+}
+
+.desktop-menu div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
 main{
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1rem;
-    margin: 5rem 0 6rem 0;
+    margin: 0rem 0 6rem 0;
 }
 
 main div{
@@ -217,7 +246,6 @@ form button{
 }
 
 .links--container a{
-    text-decoration: none;
     color: var(--primary-cyan);
     font-weight: 700;
 }
@@ -340,7 +368,6 @@ footer a:hover, footer i:hover{
 
 .links__area a{
     color: #fff;
-    text-decoration: none;
 }
 
 .social{
@@ -357,9 +384,24 @@ footer a:hover, footer i:hover{
     :root{
         font-size: 20px;
     }
+
+    .fa-bars.hamburguer{
+        display: none;
+    }
+
+    .desktop-menu{
+        display: flex;
+    }
+
+
     body > *{
         padding: 2rem;
     }
+
+    nav{
+        padding: 1.5rem 2rem;
+    }
+
     main{
         flex-direction: row-reverse;
         justify-content: space-between;
