@@ -146,7 +146,7 @@ main{
     flex-direction: column;
     align-items: center;
     gap: 1rem;
-    margin: 0rem 0 6rem 0;
+    margin-bottom: 6rem;
 }
 
 main div{
@@ -430,6 +430,45 @@ footer a:hover, footer i:hover{
 
     .shortener form input{
         flex-grow: 2;
+    }
+
+    .info{
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 1rem;
+        margin: 8rem 0 4rem 0;
+    }
+
+    .info--line{
+        transform: rotate(90deg);
+        top: -8rem;
+    }
+
+    .info h3{
+        font-size: 1.2rem;
+        text-align: left;
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    .info p{
+        font-size: 0.8rem;
+    }
+
+    .info__card{
+        text-align: left;
+        padding: 2rem;
+        max-width: 20rem;
+    }
+
+    .info__card:nth-of-type(2){
+        transform: translateY(-3rem);
+    }
+
+    .info__card:last-of-type{
+        transform: translateY(3rem);
     }
 
 }
