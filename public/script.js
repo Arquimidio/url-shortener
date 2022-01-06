@@ -58,3 +58,17 @@ const Shortener = (() => {
 
     return{}
 })()
+
+const mobileMenu = (() => {
+    const menu = document.querySelector('.mobile-menu')
+    const menuBtn = document.querySelector('.fa-bars')
+    menuBtn.addEventListener('click', () => {
+        menu.classList.toggle('visible')
+    })
+
+    window.addEventListener('click', (e) => {
+        if(!menu.contains(e.target) && e.target !== menuBtn){
+            menu.classList.remove('visible')
+        }
+    })
+})()

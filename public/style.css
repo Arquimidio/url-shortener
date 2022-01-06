@@ -77,8 +77,14 @@ nav{
     border-radius: 30px;
     padding: 2rem;
     z-index: 1;
+    opacity: 0;
+    visibility: hidden;
 }
 
+.mobile-menu.visible{
+    opacity: 1;
+    visibility: visible;
+}
 
 main{
     display: flex;
@@ -309,3 +315,4 @@ footer{
 .social i{
     font-size: 1.8rem;
 }
+
