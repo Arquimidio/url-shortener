@@ -41,6 +41,7 @@ p {
 }
 
 i{
+    cursor: pointer;
     font-size: 1.5rem;
 }
 
@@ -53,6 +54,12 @@ hr{
     border: 0;
     background-color: var(--gray);
     height: 1px;
+}
+
+.line{
+    width: 100%;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.363);
 }
 
 nav{
@@ -68,6 +75,10 @@ nav{
     z-index: 1;
 }
 
+nav i{
+    color: var(--gray)
+}
+
 .mobile-menu{
     position: fixed;
     list-style-type: none;
@@ -75,25 +86,30 @@ nav{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
+    gap: 1.5rem;
     margin: 0 auto;
     top: 5rem;
     left: 50%;
     transform: translate(-50%, 0);
     width: 90%;
     background: var(--primary-violet);
-    border-radius: 30px;
+    border-radius: 15px;
     padding: 2rem;
     z-index: 1;
     opacity: 0;
     visibility: hidden;
     color: white;
     font-weight: 700;
+    font-size: 1.1rem;
 }
 
 .mobile-menu.visible{
     opacity: 1;
     visibility: visible;
+}
+
+.mobile-menu button{
+    align-self: stretch;
 }
 
 main{
@@ -102,6 +118,13 @@ main{
     align-items: center;
     gap: 1rem;
     margin: 5rem 0 6rem 0;
+}
+
+main div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
 }
 
 main img{
@@ -299,6 +322,10 @@ footer{
     padding: 2rem 0;
 }
 
+footer a:hover, footer i:hover{
+    color: var(--primary-cyan)
+}
+
 .links{
     display: flex;
     flex-direction: column;
@@ -324,5 +351,44 @@ footer{
 
 .social i{
     font-size: 1.8rem;
+}
+
+@media (min-width: 900px){
+    :root{
+        font-size: 20px;
+    }
+    body > *{
+        padding: 2rem;
+    }
+    main{
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        text-align: left;
+    }
+
+    main img{
+        width: 60%;
+    }
+
+    main div{
+        align-items: flex-start;
+    }
+
+    .shortener{
+        max-width: 100rem;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+
+    .shortener form{
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 2rem;
+    }
+
+    .shortener form input{
+        flex-grow: 2;
+    }
+
 }
 
