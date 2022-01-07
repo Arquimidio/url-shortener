@@ -1,6 +1,6 @@
 (function(){
     if(!window.location.href.includes('https')){
-        window.location.href = 'https://fast-chamber-41261.herokuapp.com/'
+        window.location.href = 'https://ashortly.herokuapp.com/'
     }
 })()
 
