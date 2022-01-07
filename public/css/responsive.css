@@ -20,6 +20,11 @@
         padding: 1.5rem 2rem;
     }
 
+    .get-started--btn{
+        font-size: 1rem;
+        padding: 0.5rem 1.5rem;
+    }
+
     main{
         flex-direction: row-reverse;
         justify-content: space-between;
@@ -107,6 +112,10 @@
         text-align: left;
         padding: 2rem;
         max-width: 20rem;
+    }
+
+    .info__card div{
+        left: 1.5rem;
     }
 
     .info__card:nth-of-type(2){
