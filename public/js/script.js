@@ -50,7 +50,7 @@ const Shortener = (() => {
         const hr = document.createElement('hr')
         oldLinkText.innerText = shortenText(input.value, 24)
         newLink.href = `${window.location.origin}/go/${address.hash}`
-        newLink.innerText = newLink.href
+        newLink.innerText = shortenText(newLink.href, 30)
         newLink.target = "_blank"
         const copyBtn = createCopyLinkButton(newLink.innerText)
         const linkContainer = createLinkContainer([oldLinkText, hr, newLink, copyBtn])
