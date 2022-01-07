@@ -34,7 +34,7 @@ const getUrl = asyncWrapper(async (req, res) => {
 const registerUrl = asyncWrapper(async(req, res) => {
     const hash = createHash(req.body.url)
     const found = await Address.findOne({ hash })
-    if(!found){
+    if(!found && req.body.url){
         const fullAddress = await Address.create({
             hash: "" + hash, 
             url: `http://${cleanUrl(req.body.url)
