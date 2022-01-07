@@ -255,6 +255,7 @@ form button{
 .links--container a{
     color: var(--primary-cyan);
     font-weight: 700;
+    max-width: 90%;
 }
 
 .links--container button{
