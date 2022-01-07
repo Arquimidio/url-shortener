@@ -52,7 +52,7 @@ const Shortener = (() => {
         newLink.href = `${window.location.origin}/go/${address.hash}`
         newLink.innerText = shortenText(newLink.href, 30)
         newLink.target = "_blank"
-        const copyBtn = createCopyLinkButton(newLink.innerText)
+        const copyBtn = createCopyLinkButton(newLink.href)
         const linkContainer = createLinkContainer([oldLinkText, hr, newLink, copyBtn])
         linkArea.appendChild(linkContainer)
     }
