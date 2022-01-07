@@ -8,6 +8,7 @@ const Shortener = (() => {
         const { value } = input
         const address = await axios.post('/',{url: value})
         showLink(address.data)
+        input.value = ""
     })
 
     const shortenText = (text, size) => {

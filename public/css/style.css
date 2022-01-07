@@ -17,7 +17,7 @@
     --light-grey: hsl(210, 33%, 95%);
 }
 
-html *{
+html{
     scroll-behavior: smooth;
 }
 
@@ -186,6 +186,10 @@ button{
     cursor: pointer;
 }
 
+button:hover{
+    filter: brightness(1.1);
+}
+
 .button--copied{
     background-color: var(--dark-violet);
     transition: background 0.2s;
@@ -201,6 +205,7 @@ button{
     position: relative;
     top: -5rem;
 }
+
 
 form{
     background-image: url('../images/bg-shorten-mobile.svg');

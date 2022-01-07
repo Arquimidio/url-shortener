@@ -55,6 +55,7 @@
     .links--container{
         flex-direction: row;
         align-items: center;
+        margin: 0.5rem 0;
     }
 
     .links--container a{
