@@ -1,7 +1,7 @@
 (function(){
-    console.log(navigator.location.href)
-    console.log(navigator.location.href.includes('https'))
-    if(!navigator.location.href.includes('https')){
+    console.log(window.location.href)
+    console.log(window.location.href.includes('https'))
+    if(!window.location.href.includes('https')){
         window.location.href = 'https://fast-chamber-41261.herokuapp.com/'
     }
 })()
