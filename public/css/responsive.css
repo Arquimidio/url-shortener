@@ -52,6 +52,19 @@
         flex-grow: 2;
     }
 
+    .links--container{
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .links--container a{
+        margin-left: auto;
+    }
+
+    .links--container hr{
+        display: none;
+    }
+
     .statistics__main-info{
         display: flex;
         flex-direction: column;
