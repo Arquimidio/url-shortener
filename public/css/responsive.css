@@ -41,6 +41,8 @@
     }
 
     .shortener form{
+        background-image: url(../images/bg-shorten-desktop.svg);
+        background-size:cover ;
         flex-direction: row;
         justify-content: space-between;
         padding: 2rem;
@@ -48,6 +50,18 @@
 
     .shortener form input{
         flex-grow: 2;
+    }
+
+    .statistics__main-info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .statistics__main-info p {
+        max-width: 50ch;
     }
 
     .info{
@@ -87,6 +101,11 @@
 
     .info__card:last-of-type{
         transform: translateY(3rem);
+    }
+
+    .boost{
+        background-image: url('../images/bg-boost-desktop.svg');
+        background-size: cover;
     }
 
     footer{

@@ -15,16 +15,16 @@
 			<img src="./images/logo.svg" alt="">
 			<i class="fas fa-bars hamburguer"></i>
 			<ul class="menu mobile-menu">
-				<li>Features</li>
-				<li>Pricing</li>
-				<li>Resources</li>
+				<li><a href="#shortener">Features</a></li>
+				<li><a>Pricing</a></li>
+				<li><a>Resources</a></li>
 				<li class="line"></li>
 				<li>Login</li>
 				<button class="get-started--btn">Sign Up</button>
 			</ul>
 			<div class="menu desktop-menu">
 				<div>
-					<a href=''>Features</a>
+					<a href='#'>Features</a>
 					<a href=''>Pricing</a>
 					<a href=''>Resources</a>
 				</div>
@@ -45,15 +45,17 @@
 		
 		<section class="statistics">
 			<div class="shortener">
-				<form action="">
+				<form id="shortener">
 					<input type="text" class="shortner__input" placeholder="Shorten a link here...">
 					<button type="submit" >Shorten it!</button>
 					<!--<div class="shortener__messages"></div>-->
 				</form>
 				<div class="links"></div>
 			</div>
-			<h2>Advanced statistics</h2>
-			<p>Track how your links are performing across the web with our advanced statistics dashboard</p>
+			<div class="statistics__main-info">
+				<h2>Advanced statistics</h2>
+				<p>Track how your links are performing across the web with our advanced statistics dashboard</p>
+			</div>
 			<div class="info">
 				<div class="info--line"></div>
 				<div class="info__card">

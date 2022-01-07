@@ -17,7 +17,7 @@
     --light-grey: hsl(210, 33%, 95%);
 }
 
-html{
+html *{
     scroll-behavior: smooth;
 }
 
@@ -103,9 +103,12 @@ nav i{
     z-index: 1;
     opacity: 0;
     visibility: hidden;
-    color: white;
     font-weight: 700;
     font-size: 1.1rem;
+}
+
+.mobile-menu a{
+    color: white;
 }
 
 .mobile-menu.visible{
@@ -200,7 +203,7 @@ button{
 }
 
 form{
-    background-image: url('./images/bg-shorten-mobile.svg');
+    background-image: url('../images/bg-shorten-mobile.svg');
     background-color: var(--dark-blue);
     background-repeat: no-repeat;
     background-position: right top;
@@ -327,7 +330,7 @@ form button{
     align-items: center;
     gap: 1rem;
     justify-content: center;
-    background-image: url('./images/bg-boost-mobile.svg');
+    background-image: url('../images/bg-boost-mobile.svg');
     background-color: var(--primary-violet);
     background-repeat: no-repeat;
     background-size: 90%;
