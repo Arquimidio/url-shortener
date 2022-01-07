@@ -25,11 +25,9 @@ const Shortener = (() => {
             copiedBtn.classList.remove('button--copied')
             copiedBtn.innerText = 'Copy'
         }
-        event.target.select()
-        await document.execCommand('copy')
         event.target.classList.add('button--copied')
         event.target.innerText = "Copied!"
-        
+        await navigator.clipboard.writeText(url)
     }
 
     const createCopyLinkButton = (url) => {
