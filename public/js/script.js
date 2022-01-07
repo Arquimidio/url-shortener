@@ -1,3 +1,9 @@
+(function(){
+    if(!navigator.location.href.includes('https')){
+        window.location.href = 'https://fast-chamber-41261.herokuapp.com/'
+    }
+})()
+
 const Shortener = (() => {
     const form = document.querySelector('form')
     const input = document.querySelector('.shortner__input')
@@ -73,3 +79,4 @@ const mobileMenu = (() => {
         }
     })
 })()
+
