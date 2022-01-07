@@ -237,7 +237,7 @@ form button{
     display: flex;
     flex-direction: column;
     background: #fff;
-    box-shadow: 0.2rem 0.2rem 1rem rgba(0, 0, 0, 0.2);
+    box-shadow: 0.2rem 0.2rem 0.5rem rgba(0, 0, 0, 0.103);
     border-radius: 0.5rem;
     padding: 1rem;
     gap: 1rem;
