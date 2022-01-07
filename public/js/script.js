@@ -19,17 +19,13 @@ const Shortener = (() => {
         return text
     }
 
-    const copyToClipboard = (event, url) => {
+    const copyToClipboard = async (event, url) => {
         const copiedBtn = document.querySelector('.button--copied')
         if(copiedBtn){
             copiedBtn.classList.remove('button--copied')
             copiedBtn.innerText = 'Copy'
         }
-        try{
-            navigator.clipboard.writeText(url)
-        }catch(err){
-            alert(err)
-        }
+        await navigator.clipboard.writeText(url)
         event.target.classList.add('button--copied')
         event.target.innerText = "Copied!"
     }
